@@ -1,62 +1,65 @@
-# Newsletter: Drop #2 -- The Dashboard
+# Newsletter: Drop #2 -- Claude Code + Supabase = GTM Dashboard
 
 **Subject line options:**
-1. i built a GTM dashboard while building my database
-2. Claude Code + Supabase = dashboard (drop #2)
-3. sharing this before it's finished. on purpose.
+1. Claude Code + Supabase = GTM dashboard (drop #2)
+2. i built a dashboard in one session. it's incomplete. that's the point.
+3. the growth engineering skill that's going to matter
 
-**Preview text:** 5 pages, signal scoring, and it's incomplete. that's the point.
+**Preview text:** drop #2 of the GTM coding agent starter kit. a deployable signals dashboard, shared as it grows.
 
 ---
 
 ## the email
 
-i dropped the second piece of the GTM Coding Agent starter kit this week.
+something shifted.
 
-drop #1 was 10 chapters on building GTM with coding agents. context engineering, Python for GTM, voice DNA, the whole system.
+six months ago I could not have built a 5-page dashboard with signal scoring, campaign tracking, and a Python pipeline in one sitting. the tools existed but the speed didn't. that changed.
 
-drop #2 is a deployable dashboard.
+this week I sat down with Claude Code and Supabase and built the whole thing. schema, API routes, 5 pages, charts, filters, a scoring engine with exponential decay. 48 files. one session.
 
-Next.js, Supabase, signal scoring engine, 5 pages. dark theme. built in one Claude Code session.
+that's drop #2 of the GTM coding agent starter kit.
 
-**here's what it looks like:** [embed video or link to GitHub]
+[embed video or link to GitHub README]
 
-### why i'm sharing it incomplete
+### what it is
 
-i haven't sent a single email campaign through this yet. the campaign pages show seed data, not real sends.
+a deployable Next.js dashboard that sits on top of a Supabase database. 5 pages: campaigns, database intelligence, accounts browser, signals, segments. dark theme. real-time polling. 16 intent signal types with configurable weights.
 
-i'm sharing it now because what you see today will be different next week. the signals will be live. the campaigns will have real data. the scoring model will get tuned.
+the signal model is the interesting part. every signal decays exponentially with a 14-day half-life. yesterday's signal is worth more than last month's. diversity bonuses reward breadth across signal types and sources. the weights are configurable. tune them for your market.
 
-the building process is the content. not just the finished product.
+the schema enforces a 3-contact-per-company limit. a Postgres trigger blocks a 4th. forces you to rank by quality before you sequence.
 
-### the thing people keep getting wrong
+### what it's not
 
-i still use HubSpot. i still use Instantly. this is not about replacing tools.
+I still use HubSpot. I still use Instantly. this is not about replacing tools.
 
-i'm building my own database. writing my signal logic. designing my segments. the dashboard is just the visual layer on that work.
+I'm building my database, writing my signal logic, designing my segments. the dashboard is the visual layer on work I'm already doing. it stays in sync because I built both sides.
 
-it stays in sync because i built both sides. when i need a new view, i add it in 20 minutes. when something looks off, i know which table to check.
+when I need a new view next week, I add it in 20 minutes. when something looks off, I know which table to check. you can't do that with a vendor's dashboard.
 
-that's the skill. not "i saved money." it's "i understand my own system."
+### why it's incomplete
 
-### what's in the drop
+I haven't sent a single email campaign through this yet. the campaign pages show seed data, not real sends.
 
-- **5 dashboard pages:** campaigns, database intelligence, accounts browser, signals, segments
-- **16 intent signal types** with exponential decay scoring (14-day half-life)
-- **3-contact-per-company limit** enforced at the database level (forces ranking by quality)
-- **Python signal pipeline:** discover companies, score signals, load to Supabase
-- **Chapter 11:** full walkthrough of the architecture
+I'm sharing it now because what you see today will look different next week when I start sending. and the week after when the signal pipeline is running on a cron. the building process is the learning. not the finished product.
 
-the whole starter is in the repo: `starters/signals-dashboard/`
+### why this skill matters now
 
-### what's next
+the barrier to building production software dropped by an order of magnitude. and it's still dropping. what took me one session today will take 20 minutes in six months.
 
-- sending actual email campaigns and watching the dashboard light up
-- connecting the signal pipeline to a cron for live intent data
-- tuning the scoring weights based on real reply data
-- sharing every update as it happens
+the people who learn to build now -- even imperfectly, even alongside the SaaS they're already paying for -- are going to have a compounding advantage. this skill gets you hired by companies that need growth engineers who can build. or it lets you build your own thing. either way, you win.
 
-star the repo if you want to follow along: https://github.com/shawnla90/gtm-coding-agent
+you can still buy every SaaS tool on the market. the point is not to stop paying for them. the point is: experience what it feels like to build your own system. understand how signal scoring works under the hood. see what happens when you can add a dashboard page in 20 minutes instead of waiting for a vendor.
+
+and then see where that takes you.
+
+### fork it
+
+everything is in the repo: [github.com/shawnla90/gtm-coding-agent](https://github.com/shawnla90/gtm-coding-agent)
+
+the dashboard: `starters/signals-dashboard/`
+the chapter: `chapters/11-build-your-dashboard.md`
+MIT license. star it if you want to follow along.
 
 shawn
 
@@ -64,6 +67,7 @@ shawn
 
 **Sending notes:**
 - Send Tuesday or Wednesday 8-10am EST
-- Keep the plain text version clean (no heavy HTML)
-- Subject line #2 or #3 likely highest open rate
-- Include the video thumbnail as the hero image linking to the GitHub repo
+- Subject line #1 for the equation hook, #3 for the narrative hook. test both if your platform supports it.
+- Include the video thumbnail or a gif as the hero image linking to GitHub
+- This newsletter drives to the full blog post at shawnos.ai/blog/claude-code-supabase-gtm-dashboard
+- CTA: star the repo, fork it, or read the full blog post
