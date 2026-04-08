@@ -71,6 +71,12 @@ gtm-coding-agent/
 │   ├── email-sequence.md                  #   outbound email sequences
 │   └── content-repurpose.md              #   1 piece → 5 formats
 │
+├── starters/                              # deployable starter projects
+│   └── signals-dashboard/                 #   Next.js GTM dashboard + Supabase
+│       ├── schema/                        #     SQL schemas + seed data
+│       ├── pipeline/                      #     Python signal scoring pipeline
+│       └── src/                           #     dashboard app (5 pages, dark theme)
+│
 └── social/                                # launch content
     ├── reddit-post.md
     ├── linkedin-post.md
@@ -89,6 +95,8 @@ gtm-coding-agent/
 | A working folder structure for ICP, positioning, segments, campaigns, and content. Fork it. Fill it in. Run GTM from it. | 4 personas: solo founder, agency, single-client, ABM outbound. Each mode configures the skeleton differently. |
 | **Templates** | **Prompts** |
 | CLAUDE.md variants, voice DNA, content formats, partner structures. Copy into your projects, fill in the blanks. | 6 battle-tested AI prompts for ICP building, positioning, competitor analysis, signal mapping, email sequences, and content repurposing. |
+| **Starter Projects** | |
+| Deployable apps you can fork. The signals dashboard is a full Next.js app with Supabase, intent signal scoring, and 5 operational pages. Deploy to Vercel in minutes. | |
 
 ---
 
@@ -172,6 +180,7 @@ If you learn from this and want to help it grow, star it, fork it, open a PR. Th
 | 08 - Tools Ecosystem | Evaluate and integrate Apollo, Apify, Clay, Exa, Firecrawl |
 | 09 - Voice DNA & Content | Extract your voice, kill slop, create content that sounds like you |
 | 10 - Terminal Mastery | tmux, SSH, multiplexing for running multiple agent sessions |
+| 11 - Build Your Dashboard | Build and deploy a real-time GTM dashboard with Next.js, Supabase, and signal intelligence |
 
 ---
 
@@ -181,6 +190,9 @@ If you learn from this and want to help it grow, star it, fork it, open a PR. Th
 - [Cursor](https://cursor.com) — AI code editor (recommended for beginners)
 - Python 3.10+ — scripting and automation
 - Markdown — everything is structured text
+- [Next.js](https://nextjs.org) + [React](https://react.dev) — dashboard starter
+- [Supabase](https://supabase.com) — Postgres database for the dashboard
+- [Recharts](https://recharts.org) + [shadcn/ui](https://ui.shadcn.com) — charts and components
 
 ---
 

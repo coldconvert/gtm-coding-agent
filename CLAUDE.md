@@ -66,6 +66,8 @@ Recommend 3-5 chapters based on their profile:
 | Content + GTM | 09 → 02 → 03 → 05 |
 | Agency | 02 → 04 → 07 → 08 → 05 |
 | ABM pipeline builder | 07 → 08 → 04 → 06 → 05 |
+| Dashboard builder    | 11 → 07 → 08 → 06 |
+| ABM + dashboard      | 07 → 08 → 11 → 06 → 05 |
 
 Tell them: *"Start with Chapter XX. When you're done, come back and say 'next chapter' and I'll guide you through the next one."*
 
@@ -80,6 +82,9 @@ When the user returns after setup:
 - **"add a tool"** → Help them integrate via the framework in Chapter 04 (OAuth vs CLI vs API)
 - **"create content"** → Load their voice profile first, then assist with content
 - **"add a client"** → Use `templates/partner/` to scaffold a new client folder (agency mode)
+- **"build dashboard"** → Guide them to Chapter 11 and `starters/signals-dashboard/`
+- **"set up supabase"** → Walk through schema setup from `starters/signals-dashboard/schema/`
+- **"deploy dashboard"** → Vercel deployment from the starter
 
 ## Reference Paths
 
@@ -89,6 +94,9 @@ When the user returns after setup:
 - Prompts: `prompts/*.md`
 - Examples: `examples/{voice-dna,icp,prompts,scripts}/`
 - GTM-OS skeleton: `gtm-os/`
+- Dashboard starter: `starters/signals-dashboard/`
+- Schema files: `starters/signals-dashboard/schema/`
+- Pipeline scripts: `starters/signals-dashboard/pipeline/`
 
 ## Rules
 
