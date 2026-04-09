@@ -1,0 +1,21 @@
+node_modules
+.next
+.git
+.gitignore
+*.md
+README.md
+
+# Pipeline and schema are not part of the web app
+pipeline/
+schema/
+
+# Secrets — set via fly secrets set, never baked into the image
+.env
+.env.*
+!.env.example
+
+# Dev/build artifacts
+npm-debug.log*
+*.tsbuildinfo
+next-env.d.ts
+.vercel
